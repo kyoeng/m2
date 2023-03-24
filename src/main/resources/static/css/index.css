@@ -1,7 +1,7 @@
 /* 배너 부분 */
 .banner_section {
     width: 100%;
-    height: 800px;
+    height: 750px;
 }
 
 .banner_section > .banner_container {
@@ -19,7 +19,7 @@
     transition: all 1s;
     visibility: hidden;
     opacity: 0;
-    padding: 0 30px;
+    padding: 0 100px;
 }
 
 .banner_section > .banner_container > .banner_on {

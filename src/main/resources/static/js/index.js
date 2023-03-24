@@ -18,7 +18,7 @@ function autoSlide() {
 
 // onload 이벤트
 window.onload = function () {
-    slide = setInterval(autoSlide, 5000);
+    slide = setInterval(autoSlide, 9000);
 };
 
 // 배너 mouseover 이벤트
@@ -28,7 +28,7 @@ bannerContainer.addEventListener('mouseover', function () {
 
 // 배너 mouseleave 이벤트
 bannerContainer.addEventListener('mouseleave', function () {
-    slide = setInterval(autoSlide, 5000);
+    slide = setInterval(autoSlide, 9000);
 });
 
 // 배너 버튼 클릭 이벤트
