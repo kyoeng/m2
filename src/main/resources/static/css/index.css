@@ -1,4 +1,67 @@
-main {
-    height: 500px;
-    background-color: beige;
+/* 배너 부분 */
+.banner_section {
+    width: 100%;
+    height: 800px;
+}
+
+.banner_section > .banner_container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.banner_section > .banner_container > .banner_image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 1s;
+    visibility: hidden;
+    opacity: 0;
+    padding: 0 30px;
+}
+
+.banner_section > .banner_container > .banner_on {
+    visibility: visible;
+    opacity: 1;
+}
+
+.banner_section > .banner_container > .banner_image > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* 배너 버튼 */
+.banner_section > .banner_container > .banner_btns {
+    width: 100px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 50px;
+    left: calc((100% - 100px) / 2);
+    z-index: 100;
+}
+
+.buttons {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    overflow: hidden;
+    opacity: 0.4;
+    background-color: white;
+    transition: all 1s;
+}
+
+.buttons:hover {
+    cursor: pointer;
+}
+
+.banner_section > .banner_container > .banner_btns > .button_on {
+    opacity: 1;
 }

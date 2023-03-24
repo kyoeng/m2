@@ -7,40 +7,159 @@
     </head>
 
     <body>
+        <!-- ===== header ===== -->
         <header th:fragment="header">
             <h1 class="logo_container">
-                <a href="/">M2</a>
+                <a href="/">
+                    <img src="/images/icons/m2.png" alt="logo">
+                </a>
             </h1>
 
             <ul class="category_nav">
                 <li class="category_nav_btn have_under">
                     텐트
                     <img src="/images/icons/category_nav_lower.png" alt="img">
+
+                    <div class="under_nav">
+                        <ul class="under_nav_btns">
+                            <li>
+                                <a href="">리빙쉘 텐트</a>
+                            </li>
+
+                            <li>
+                                <a href="">돔 텐트</a>
+                            </li>
+
+                            <li>
+                                <a href="">팝업 텐트</a>
+                            </li>
+
+                            <li>
+                                <a href="">알파인 텐트</a>
+                            </li>
+                        </ul>
+
+                        <img src="/images/icons/under_tent.jpg" alt="img">
+
+                        <p>이 사이트는 상업적 목적이 아닙니다.</p>
+                    </div>
                 </li>
 
                 <li class="category_nav_btn have_under">
                     타프
                     <img src="/images/icons/category_nav_lower.png" alt="img">
+
+                    <div class="under_nav">
+                        <ul class="under_nav_btns">
+                            <li>
+                                <a href="">렉타 타프</a>
+                            </li>
+
+                            <li>
+                                <a href="">헥사 타프</a>
+                            </li>
+                        </ul>
+
+                        <img src="/images/icons/under_tarp.jpg" alt="img">
+
+                        <p>이 사이트는 상업적 목적이 아닙니다.</p>
+                    </div>
                 </li>
 
                 <li class="category_nav_btn have_under">
                     테이블
                     <img src="/images/icons/category_nav_lower.png" alt="img">
+
+                    <div class="under_nav">
+                        <ul class="under_nav_btns">
+                            <li>
+                                <a href="">접이식 테이블</a>
+                            </li>
+
+                            <li>
+                                <a href="">조립식 테이블</a>
+                            </li>
+
+                            <li>
+                                <a href="">높낮이조절 테이블</a>
+                            </li>
+                        </ul>
+
+                        <img src="/images/icons/under_table.jpg" alt="img">
+
+                        <p>이 사이트는 상업적 목적이 아닙니다.</p>
+                    </div>
                 </li>
 
                 <li class="category_nav_btn have_under">
                     의자
                     <img src="/images/icons/category_nav_lower.png" alt="img">
+
+                    <div class="under_nav">
+                        <ul class="under_nav_btns">
+                            <li>
+                                <a href="">접이식 의자</a>
+                            </li>
+
+                            <li>
+                                <a href="">조립식 의자</a>
+                            </li>
+
+                            <li>
+                                <a href="">경량 의자</a>
+                            </li>
+
+                            <li>
+                                <a href="">릴렉스 의자</a>
+                            </li>
+                        </ul>
+
+                        <img src="/images/icons/under_chair.jpg" alt="img">
+
+                        <p>이 사이트는 상업적 목적이 아닙니다.</p>
+                    </div>
                 </li>
 
                 <li class="category_nav_btn have_under">
                     침낭/매트
                     <img src="/images/icons/category_nav_lower.png" alt="img">
+
+                    <div class="under_nav">
+                        <ul class="under_nav_btns">
+                            <li>
+                                <a href="">침낭</a>
+                            </li>
+
+                            <li>
+                                <a href="">매트</a>
+                            </li>
+                        </ul>
+
+                        <img src="/images/icons/under_bags.jpg" alt="img">
+
+                        <p>이 사이트는 상업적 목적이 아닙니다.</p>
+                    </div>
                 </li>
 
                 <li class="category_nav_btn have_under">
                     화로/버너
                     <img src="/images/icons/category_nav_lower.png" alt="img">
+
+                    <div class="under_nav">
+                        <ul class="under_nav_btns">
+                            <li>
+                                <a href="">화로</a>
+                            </li>
+
+                            <li>
+                                <a href="">버너</a>
+                            </li>
+                        </ul>
+
+                        <img src="/images/icons/under_stove.jpg" alt="img">
+
+                        <p>이 사이트는 상업적 목적이 아닙니다.</p>
+                    </div>
                 </li>
 
                 <li class="category_nav_btn">
@@ -75,16 +194,35 @@
                     </a>
                 </li>
             </ul>
-
-            <div class="under_nav" id="under_nav">
-                <ul class="under_nav_btns"></ul>
-
-                <img id="under_img" src="" alt="img">
-            </div>
         </header>
 
-        <footer th:fragment="footer">
 
+        <!-- ===== footer ===== -->
+        <footer th:fragment="footer">
+            <div class="my_infomation">
+                <div class="git_box">
+                    <span>이 사이트의 Git</span>
+                    <a href="https://github.com/kyoeng/m2">여기를 클릭하세요.</a>
+                </div>
+
+                <div class="my_container">
+                    <p>경진우</p>
+
+                    <div>
+                        <span>e-mail</span>
+                        <span>rudwlsdn@naver.com</span>
+                    </div>
+
+                    <div>
+                        <span>phone</span>
+                        <span>010-9381-2053</span>
+                    </div>
+                </div>
+            </div>
+
+            <p class="site_text">
+                이 사이트는 상업적 용도가 아닌 공부의 목적으로 만들어진 사이트 입니다.
+            </p>
         </footer>
     </body>
 </html>
