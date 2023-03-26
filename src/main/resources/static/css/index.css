@@ -44,7 +44,7 @@
     position: absolute;
     bottom: 50px;
     left: calc((100% - 100px) / 2);
-    z-index: 100;
+    z-index: 10;
 }
 
 .buttons {
@@ -127,12 +127,100 @@
 
 /* 식기 관련 섹션 */
 .stbn_container {
-    width: 1200px;
-    height: 600px;
+    width: 1308px;
+    height: 654px;
     margin: 100px auto 0;
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(6, 1fr);
+
+    /*titel : t | big : b1, b2 | middel : m1, m2 | small : s1, s2, s3, s4 */
+    grid-template-areas:
+        "s1 s2 m1 m1 b1 b1"
+        "b2 b2 t t b1 b1"
+        "b2 b2 m2 m2 s3 s4";
 }
 
+.stbn_title {
+    grid-area: t;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ee4a44;
+}
 
+.stbn_title > span {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.stbn_title > span:first-of-type {
+    height: 40%;
+    font-size: 2.5rem;
+    align-items: end;
+    font-weight: bold;
+}
+
+.stbn_title > span:last-of-type {
+    height: 30%;
+    font-size: 1.6rem;
+    align-items: start;
+}
+
+.stbn_box {
+    position: relative;
+}
+
+.stbn_box > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.stbn_box > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.stbn_box > a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.stbn_big1 {
+    grid-area: b1;
+}
+
+.stbn_big2 {
+    grid-area: b2;
+}
+
+.stbn_middle1 {
+    grid-area: m1;
+    background: url("../images/banners/index_bbq_banner1.jpg") center/cover;
+}
+
+.stbn_middle2 {
+    grid-area: m2;
+    background: url("../images/banners/index_bbq_banner2.jpg") center/cover;
+}
+
+.stbn_small1 {
+    grid-area: s1;
+}
+
+.stbn_small2 {
+    grid-area: s2;
+}
+
+.stbn_small3 {
+    grid-area: s3;
+}
+
+.stbn_small4 {
+    grid-area: s4;
+}
 
